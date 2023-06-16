@@ -309,7 +309,7 @@ aside p {
 
 /* Photo-page contents */
 #photo {
-  background-image: url(../寺３/image/temple/daniel-olah-2lMK4dgqwFM-unsplash.jpg);
+  background-image: url(image/temple/daniel-olah-2lMK4dgqwFM-unsplash.jpg);
   min-height: 100vh;
   background-size: cover;
   object-fit: cover;
@@ -360,7 +360,7 @@ aside p {
 
 /* contact-page -------------------------------------*/
 #contact {
-  background-image: url(../寺３/image/temple/zahid-lilani-gh8ZeErrYzQ-unsplash.jpg);
+  background-image: url(image/temple/zahid-lilani-gh8ZeErrYzQ-unsplash.jpg);
   background-position: 100% 60%;
   min-height: 100vh;
   background-size: cover;
