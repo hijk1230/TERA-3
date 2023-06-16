@@ -9,7 +9,7 @@ body {
   color: #ffffff;
   font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
   line-height: 1.7;
-  background-color: rgba(1,1,1,.3);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 img {
@@ -25,7 +25,6 @@ a {
 .big-bg {
   background-size: cover;
   background-position: center top;
-
 }
 
 #home {
@@ -42,9 +41,7 @@ a {
 /* BG END */
 
 /* header */
-h1 img {
-  border-radius: 80px;
-}
+
 
 .header-h1 {
   display: flex;
@@ -159,6 +156,8 @@ footer {
   text-decoration: none;
   padding: 8px 10px;
   white-space: nowrap;
+  width: 3vh;
+  height: 3vh;
 }
 
 .sns a:hover {
@@ -183,7 +182,7 @@ footer p {
 
 .main-nav2 a {
   font-size: 18px;
-  color:#432
+  color: #ffffff;
 }
 
 .main-nav2 a:hover {
@@ -198,15 +197,15 @@ footer p {
 #diary {
   background-image: url(image/tera.jpg);
   background-position: 51% 33%;
-  background-color: rgba(1, 1, 1, .2);
+  background-color: rgba(1, 1, 1, .3);
   background-blend-mode: soft-light;
   height: 350px;
   margin-bottom: 40px;
-  color:#432
+  color:#ffffff;
 }
 
 #diary li{
-  color:#432;
+  color:#ffffff;
 }
 
 
@@ -299,7 +298,7 @@ aside p {
   list-style: none;
 }
 .sub-menu a{
-  color:#432;
+  color:#ffffff;
   padding: 10px;
   display: block;
 }
@@ -312,6 +311,10 @@ aside p {
 #photo {
   background-image: url(../寺３/image/temple/daniel-olah-2lMK4dgqwFM-unsplash.jpg);
   min-height: 100vh;
+  background-size: cover;
+  object-fit: cover;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .photo-content {
@@ -354,6 +357,58 @@ aside p {
 }
 
 /* Photo-page contents END */
+
+/* contact-page -------------------------------------*/
+#contact {
+  background-image: url(../寺３/image/temple/zahid-lilani-gh8ZeErrYzQ-unsplash.jpg);
+  background-position: 100% 60%;
+  min-height: 100vh;
+  background-size: cover;
+  object-fit: cover;
+  padding: 20px;
+}
+
+#contact .page-title{
+  text-align: center;
+}
+
+/* フォーム */
+form div {
+  margin-bottom: 14px;
+}
+label {
+  font-size :1.125rem ;
+  margin-bottom:10px;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, .5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+
+input[type="text"],
+input[type="email"]{
+  width:100%;
+  max-width: 240px;
+}
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+input[type="submit"]{
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* contact pageEND--------------------------------------- */
 
 
 
@@ -431,22 +486,23 @@ aside p {
     margin-left: 80px;
   }
 
- 
-
   .big-box {
     grid-column : auto;
     grid-row : auto;
     object-fit: cover;
   }
-  .big-box img {
-    height: auto;
-  }
+  /* contact モバイル */
+
   
-}
-/* photo-page */
-.photo-content {    
-  margin-top :20%;
+  #contact .page-title{
+    margin-top: 40px;
+  }
+  /* contact モバイル　フォーム */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    max-width: 100%;
+  }
 }
 
-
-/* メディアクエリー終わり */
+/* メディアクエリー終わり */ 
